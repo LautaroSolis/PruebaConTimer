@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prueba con tiempo</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome CDN Link para icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!-- star quiz button -->
+    <div class="start_btn"><button>Empezar prueba</button></div>
+
+    <!-- info box -->
+    <div class="info_box">
+        <div class="info_tittle">
+            <span>algunas reglas de este cuestionario</span>
+        </div>
+        <div class="info_list">
+            <div class="info"> 1. Tendra solo <span> 15 segundos </span> para cada pregunta.</div>
+            <div class="info"> 2. Una vez que seleccione su respuesta, no se puede deshacer.</div>
+            <div class="info"> 3. No puede seleccionar ninguna opción una vez que se acaba el tiempo.</div>
+            <div class="info"> 4. No puedes salir de la prueba mientras juegas. </div>
+            <div class="info"> 5. Obtendrá puntos sobre la base de sus respuestas correctas.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Salir</button>
+            <button class="restart">Continuar</button>
+        </div>
+    </div>
+
+    <!-- QuizBox -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Increible app de prueba</div>
+            <div class="timer">
+                <div class="timer_text">Tiempo Restante</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- <span>¿Qué significa html?</span> -->
+            </div>
+            <div class="option_list">
+                <!-- <div class="option">
+                    <span>Hyper Text Preprocessor</span>
+                    <div class="icon tick"><i class="fas fa-check"></i></div>
+                </div>
+                <div class="option">
+                    <span>Hyper Text Markup Language</span>
+                    <div class="icon cross"><i class="fas fa-times"></i></div>
+                </div>
+                <div class="option">
+                    <span>Hyper Text Multiple Language</span>
+                </div>
+                <div class="option">
+                    <span>Hyper Tool Multi Lenguage</span>
+                </div> -->
+            </div>
+        </section>
+
+        <!-- QuizBox Footer -->
+        <footer>
+            <div class="total_que">
+                <!-- <span><p>2</p>de<p>5</p>preguntas</span> -->
+            </div>
+            <button class="next_btn">Siguiente Pregunta</button>
+        </footer>
+    </div>
+
+    <!-- ResultBox -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">Haz completado la prueba con exito!</div>
+        <div class="score_text">
+            <!-- <span>lo siento, solo obtuviste<p>2</p>de<p>5</p></span> -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Reiniciar</button>
+            <button class="quit">Salir</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="questions.js"></script>
+
+</body>
+</html>
